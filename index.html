@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Curated Luxury Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">LUXE</span>
+                <span class="logo-tagline">CURATED</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#jewelry" class="nav-link">Jewelry</a></li>
+                <li class="nav-item"><a href="#handbags" class="nav-link">Handbags</a></li>
+                <li class="nav-item"><a href="#shoes" class="nav-link">Shoes</a></li>
+                <li class="nav-item"><a href="#eyewear" class="nav-link">Eyewear</a></li>
+                <li class="nav-item"><a href="#watches" class="nav-link">Watches</a></li>
+                <li class="nav-item"><a href="#newsletter" class="nav-link">Subscribe</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <button class="icon-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="icon-btn" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Extraordinary</span>
+                    <span class="title-line">Luxury</span>
+                    <span class="title-line">Curated</span>
+                </h1>
+                <p class="hero-subtitle">Discover an editorial collection of extraordinary accessories that transcend trends and celebrate timeless elegance.</p>
+                <button class="cta-button">Explore Collection</button>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-placeholder elegant-placeholder">
+                    <svg viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f5f1e8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#e8dcc8;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="500" height="600" fill="url(#heroGrad)"/>
+                        <circle cx="150" cy="100" r="80" fill="#d4af37" opacity="0.15"/>
+                        <path d="M50 200 Q150 150 250 200 T450 200" stroke="#d4af37" stroke-width="2" fill="none" opacity="0.3"/>
+                        <rect x="100" y="300" width="200" height="250" fill="#2a2a2a" opacity="0.05"/>
+                        <circle cx="350" cy="250" r="120" fill="#d4af37" opacity="0.1"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Jewelry Section -->
+    <section class="collection-section" id="jewelry">
+        <div class="section-header">
+            <h2 class="section-title">Fine Jewelry</h2>
+            <p class="section-subtitle">Timeless pieces that capture light and elegance</p>
+        </div>
+        
+        <div class="product-grid jewelry-grid">
+            <div class="product-card">
+                <div class="product-image jewelry-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="gemGrad1" cx="35%" cy="35%">
+                                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                <stop offset="70%" style="stop-color:#d4af37;stop-opacity:0.8" />
+                                <stop offset="100%" style="stop-color:#8b7a0f;stop-opacity:1" />
+                            </radialGradient>
+                        </defs>
+                        <rect width="300" height="400" fill="#faf7f2"/>
+                        <polygon points="150,50 200,150 150,250 100,150" fill="url(#gemGrad1)" stroke="#d4af37" stroke-width="1"/>
+                        <circle cx="150" cy="300" r="25" fill="#d4af37" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Diamond Pendant</h3>
+                    <p class="product-collection">18K Gold Collection</p>
+                    <p class="product-price">$4,850</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image jewelry-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#faf7f2"/>
+                        <circle cx="100" cy="120" r="35" fill="#d4af37" stroke="#8b7a0f" stroke-width="2"/>
+                        <circle cx="100" cy="120" r="25" fill="#f5e6d3"/>
+                        <circle cx="200" cy="180" r="30" fill="#d4af37" stroke="#8b7a0f" stroke-width="2"/>
+                        <circle cx="200" cy="180" r="20" fill="#f5e6d3"/>
+                        <path d="M100 155 Q150 180 200 210" stroke="#d4af37" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pearl Earrings</h3>
+                    <p class="product-collection">South Sea Pearl</p>
+                    <p class="product-price">$3,200</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image jewelry-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#faf7f2"/>
+                        <path d="M80 100 L150 60 L220 100 L200 200 L150 240 L100 200 Z" fill="#d4af37" stroke="#8b7a0f" stroke-width="2"/>
+                        <circle cx="150" cy="150" r="15" fill="#f5e6d3"/>
+                        <rect x="50" y="280" width="200" height="40" rx="20" fill="#d4af37" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sapphire Ring</h3>
+                    <p class="product-collection">Luxury Gemstone</p>
+                    <p class="product-price">$5,600</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image jewelry-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#faf7f2"/>
+                        <path d="M150 50 L180 100 L220 120 L200 160 L210 210 L150 190 L90 210 L100 160 L80 120 L120 100 Z" fill="#d4af37" stroke="#8b7a0f" stroke-width="2"/>
+                        <circle cx="150" cy="120" r="12" fill="#ffffff" opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Emerald Brooch</h3>
+                    <p class="product-collection">Vintage Inspired</p>
+                    <p class="product-price">$2,950</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Handbags Section -->
+    <section class="collection-section" id="handbags">
+        <div class="section-header">
+            <h2 class="section-title">Designer Handbags</h2>
+            <p class="section-subtitle">Architectural craftsmanship in leather and metal</p>
+        </div>
+
+        <div class="product-grid handbags-grid">
+            <div class="product-card">
+                <div class="product-image handbag-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M80 80 L80 300 Q80 320 100 320 L200 320 Q220 320 220 300 L220 80" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M120 40 Q150 20 180 40" stroke="#d4af37" stroke-width="3" fill="none"/>
+                        <ellipse cx="150" cy="300" rx="40" ry="25" fill="#d4af37" opacity="0.2"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Structured Tote</h3>
+                    <p class="product-collection">Italian Leather</p>
+                    <p class="product-price">$3,400</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image handbag-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <ellipse cx="150" cy="150" rx="90" ry="110" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M80 80 Q150 50 220 80" stroke="#d4af37" stroke-width="3" fill="none"/>
+                        <circle cx="150" cy="150" r="50" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Dome Satchel</h3>
+                    <p class="product-collection">Calf Leather</p>
+                    <p class="product-price">$4,200</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image handbag-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M70 150 L150 100 L230 150 L220 280 Q220 300 200 300 L100 300 Q80 300 80 280 Z" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M120 120 Q150 140 180 120" stroke="#d4af37" stroke-width="2" fill="none"/>
+                        <rect x="130" y="200" width="40" height="50" fill="#d4af37" opacity="0.3" rx="2"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Envelope Clutch</h3>
+                    <p class="product-collection">Patent Leather</p>
+                    <p class="product-price">$1,950</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image handbag-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <circle cx="150" cy="180" r="85" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M90 100 Q150 80 210 100" stroke="#d4af37" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M120 280 L180 280" stroke="#d4af37" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Circle Crossbody</h3>
+                    <p class="product-collection">Nubuck Suede</p>
+                    <p class="product-price">$2,750</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shoes Section -->
+    <section class="collection-section" id="shoes">
+        <div class="section-header">
+            <h2 class="section-title">Statement Footwear</h2>
+            <p class="section-subtitle">Walk with confidence and elegance</p>
+        </div>
+
+        <div class="product-grid shoes-grid">
+            <div class="product-card">
+                <div class="product-image shoe-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M50 280 L70 200 Q80 140 120 120 L180 120 Q220 140 230 200 L250 280" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M70 280 Q150 320 230 280" fill="#d4af37" opacity="0.2" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="150" cy="120" rx="50" ry="30" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Classic Pump</h3>
+                    <p class="product-collection">90mm Heel</p>
+                    <p class="product-price">$1,650</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image shoe-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M60 240 L80 160 Q90 120 130 110 L180 110 Q210 115 230 180 L250 240" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M75 240 Q150 280 235 240" fill="#d4af37" opacity="0.2" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M130 110 L140 85 L150 65 L160 85 L170 110" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Stiletto Sandal</h3>
+                    <p class="product-collection">Evening Wear</p>
+                    <p class="product-price">$1,850</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image shoe-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M50 260 L70 180 Q85 130 125 115 L185 115 Q225 130 240 180 L260 260" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M70 260 Q150 310 240 260" fill="#d4af37" opacity="0.2" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M125 115 L115 60 M185 115 L195 60" stroke="#d4af37" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ballet Flat</h3>
+                    <p class="product-collection">Timeless Classic</p>
+                    <p class="product-price">$950</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image shoe-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M50 200 L70 140 Q85 100 125 90 L185 90 Q225 100 240 140 L260 200" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="150" cy="280" rx="100" ry="60" fill="#d4af37" opacity="0.15"/>
+                        <path d="M130 90 L125 50 M170 90 L175 50" stroke="#d4af37" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ankle Boot</h3>
+                    <p class="product-collection">Leather Combat</p>
+                    <p class="product-price">$2,100</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eyewear Section -->
+    <section class="collection-section" id="eyewear">
+        <div class="section-header">
+            <h2 class="section-title">Designer Eyewear</h2>
+            <p class="section-subtitle">See the world through luxury</p>
+        </div>
+
+        <div class="product-grid eyewear-grid">
+            <div class="product-card">
+                <div class="product-image eyewear-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <circle cx="90" cy="150" r="45" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <circle cx="210" cy="150" r="45" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M135 150 L165 150" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M60 150 L30 140" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M240 150 L270 140" stroke="#d4af37" stroke-width="2"/>
+                        <circle cx="90" cy="150" r="35" fill="#a8d8ea" opacity="0.4"/>
+                        <circle cx="210" cy="150" r="35" fill="#a8d8ea" opacity="0.4"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Round Sunglasses</h3>
+                    <p class="product-collection">UV Protection</p>
+                    <p class="product-price">$580</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image eyewear-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M50 120 L90 100 L120 120 L120 180 L50 180 Z" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M180 120 L210 100 L250 120 L250 180 L180 180 Z" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M120 150 L180 150" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M40 150 L20 150" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M260 150 L280 150" stroke="#d4af37" stroke-width="2"/>
+                        <polygon points="65,140 100,110 110,170" fill="#a8d8ea" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cat Eye Frames</h3>
+                    <p class="product-collection">Prescription Ready</p>
+                    <p class="product-price">$450</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image eyewear-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <rect x="50" y="120" width="80" height="60" fill="none" stroke="#2a2a2a" stroke-width="3" rx="8"/>
+                        <rect x="170" y="120" width="80" height="60" fill="none" stroke="#2a2a2a" stroke-width="3" rx="8"/>
+                        <path d="M130 150 L170 150" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M40 150 L20 150" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M260 150 L280 150" stroke="#d4af37" stroke-width="2"/>
+                        <rect x="65" y="130" width="50" height="40" fill="#a8d8ea" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Geometric Frame</h3>
+                    <p class="product-collection">Contemporary Style</p>
+                    <p class="product-price">$520</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image eyewear-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <path d="M40 140 Q70 110 100 140 L100 170 Q70 190 40 170 Z" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M200 140 Q230 110 260 140 L260 170 Q230 190 200 170 Z" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <path d="M100 155 L200 155" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M25 155 L10 155" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M275 155 L290 155" stroke="#d4af37" stroke-width="2"/>
+                        <ellipse cx="70" cy="155" rx="30" ry="25" fill="#a8d8ea" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Oversized Aviator</h3>
+                    <p class="product-collection">Luxury Metal</p>
+                    <p class="product-price">$620</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watches Section -->
+    <section class="collection-section" id="watches">
+        <div class="section-header">
+            <h2 class="section-title">Fine Timepieces</h2>
+            <p class="section-subtitle">Precision engineering meets artistic design</p>
+        </div>
+
+        <div class="product-grid watches-grid">
+            <div class="product-card">
+                <div class="product-image watch-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <circle cx="150" cy="150" r="100" fill="#2a2a2a" stroke="#d4af37" stroke-width="3"/>
+                        <circle cx="150" cy="150" r="90" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.5"/>
+                        <circle cx="150" cy="150" r="8" fill="#d4af37"/>
+                        <path d="M150 70 L150 90" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 210 L150 230" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 150 L180 150" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 150 L140 100" stroke="#d4af37" stroke-width="1.5"/>
+                        <rect x="120" y="280" width="60" height="30" fill="#d4af37" opacity="0.3" rx="15"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Classic Watch</h3>
+                    <p class="product-collection">Swiss Movement</p>
+                    <p class="product-price">$8,900</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image watch-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <circle cx="150" cy="150" r="95" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+                        <circle cx="150" cy="150" r="100" fill="#d4af37" opacity="0.1"/>
+                        <circle cx="150" cy="150" r="10" fill="#d4af37"/>
+                        <path d="M150 60 L150 85" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M240 150 L215 150" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 150 L175 175" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 150 L135 95" stroke="#d4af37" stroke-width="1.5"/>
+                        <rect x="110" y="280" width="80" height="25" fill="#2a2a2a" rx="12"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Luxury Sport</h3>
+                    <p class="product-collection">Water Resistant</p>
+                    <p class="product-price">$12,500</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image watch-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <circle cx="150" cy="150" r="98" fill="none" stroke="#d4af37" stroke-width="4"/>
+                        <circle cx="150" cy="150" r="12" fill="#d4af37"/>
+                        <path d="M150 55 L150 80" stroke="#d4af37" stroke-width="3"/>
+                        <path d="M245 150 L220 150" stroke="#d4af37" stroke-width="3"/>
+                        <path d="M150 150 L180 130" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 150 L120 160" stroke="#d4af37" stroke-width="1.5"/>
+                        <circle cx="150" cy="150" r="88" fill="none" stroke="#2a2a2a" stroke-width="1" opacity="0.3"/>
+                        <rect x="100" y="280" width="100" height="28" fill="#d4af37" opacity="0.2" rx="14"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Elite Chronograph</h3>
+                    <p class="product-collection">Precision Instrument</p>
+                    <p class="product-price">$15,800</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image watch-image">
+                    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="400" fill="#f5f1e8"/>
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+                        <circle cx="150" cy="150" r="95" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.7"/>
+                        <circle cx="150" cy="150" r="9" fill="#2a2a2a"/>
+                        <path d="M150 65 L150 85" stroke="#2a2a2a" stroke-width="2"/>
+                        <path d="M235 150 L215 150" stroke="#2a2a2a" stroke-width="2"/>
+                        <path d="M150 150 L170 170" stroke="#d4af37" stroke-width="2"/>
+                        <path d="M150 150 L140 90" stroke="#d4af37" stroke-width="1.5"/>
+                        <rect x="115" y="280" width="70" height="24" fill="#2a2a2a" rx="12"/>
+                    </svg>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Minimalist Piece</h3>
+                    <p class="product-collection">Architectural Design</p>
+                    <p class="product-price">$6,200</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Join Our Exclusive Circle</h2>
+                <p class="newsletter-subtitle">Receive invitations to private collections, early access to new releases, and curated editorial content delivered directly to your inbox.</p>
+            </div>
+            
+            <form class="newsletter-form">
+                <input 
+                    type="email" 
+                    placeholder="Your email address" 
+                    required
+                    class="newsletter-input"
+                >
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+            
+            <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+        
+        <div class="newsletter-decoration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.3"/>
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.2"/>
+                <circle cx="100" cy="100" r="50" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.1"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">LUXE</h4>
+                <p class="footer-tagline">Curated Luxury Accessories</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 100-8 4 4 0 000 8zm4.965-10.322a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-10-10.5z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.223-.937 1.58-6.685 1.58-6.685s-.389-.779-.389-1.937c0-1.816.933-3.163 2.053-3.163 1.05 0 1.559.788 1.559 1.733 0 1.058-.67 2.642-.015 4.251.617 1.537 2.079 2.594 3.949 2.594 2.761 0 4.663-2.405 4.663-6.233 0-3.268-2.226-5.894-5.488-5.894-3.888 0-6.469 2.907-6.469 5.992 0 1.19.4 2.46 1.015 3.249.112.195.129.37.096.57-.032.151-.103.459-.133.59-.065.289-.221 1.004-.285 1.187-.09.389-.365 1.271-1.333 1.271-.928 0-1.764-.551-1.764-1.738 0-1.297.923-2.755 2.226-3.922 1.303-1.167 3.009-1.847 4.84-1.847 3.434 0 6.097 2.353 6.097 5.846 0 3.939-2.412 7.104-5.823 7.104-1.568 0-3.044-.639-3.992-1.645-.13.377-.289.718-.457 1.045 1.237.573 2.584.884 3.942.884 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h5 class="footer-subtitle">Shop</h5>
+                <ul class="footer-links">
+                    <li><a href="#jewelry">Fine Jewelry</a></li>
+                    <li><a href="#handbags">Designer Handbags</a></li>
+                    <li><a href="#shoes">Statement Footwear</a></li>
+                    <li><a href="#eyewear">Designer Eyewear</a></li>
+                    <li><a href="#watches">Fine Timepieces</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5 class="footer-subtitle">Customer Care</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5 class="footer-subtitle">Company</h5>
+                <ul class="footer-links">
+                    <li><a href="#">About LUXE</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LUXE Curated Luxury. All rights reserved.</p>
+            <p class="footer-payment">Secure payments via all major card providers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
